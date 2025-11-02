@@ -1,0 +1,66 @@
+from array import *
+
+ 
+# #  Signed int value ( +ve & -ve values )
+# ints =  array('i', [1,2,-3,5,7,9])
+# print( f"Signed int {ints}")
+
+# #  Unsigned int value (only +ve values )
+# int1 =  array('I', [1,2,3,5,7,9])
+# print(int1)
+
+
+# # float Values
+# floats = array('f', [1.5, -2.3, 3.6])
+# print(floats)
+
+
+# # Functions 
+# ints =  array('i', [1,2,-3,5,7,9])
+# print(f"buffer_info:: {ints.typecode}")
+
+# ints.reverse
+# print(f"Reverse::  {ints }")
+
+# for e in ints:
+#     print(e)
+
+
+# # Char
+    
+# chars =  array('u', ['a', 'b', 'c'])
+# print( f"chars : {chars}")
+
+
+# # Copy the array
+
+# vals =  array('i', [1,2,-3,5,7,9])
+
+# newArray= array(vals.typecode,(a for a in vals))
+# print (newArray)
+
+
+# Add the value in Array
+
+arr= array('i', [])
+
+x= int(input("Enter the length of the array"))
+
+for n in range(x):  
+    a = int(input(" Enter the next value"))
+    arr.append(a)
+
+print (arr)
+
+# Search
+val = int(input(" Enter the value for Search"))
+k=0
+
+for d in arr:
+   if d == val:
+    #   print(k)
+      break
+   k+= 1
+
+
+print(arr.index(val))
